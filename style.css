@@ -1,4 +1,75 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --col-green: #51823c;
+    --col-red: #d52323;
+    --col-tan: #fff0d8;
+    --col-white: #efefef;
+    --col-brown: #493800;
+    --col-gray: #404040;
+    font-size: 18px;
+}
+
+body {
+    color: var(--col-gray);
+    background-color: var(--col-white);
+}
+
+.bg-tan {
+    background-color: var(--col-tan);
+}
+
+/* Header */
+header{
+    border-bottom: 2px solid var(--col-red);
+    padding: 20px;
+}
+
+.header-flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+.portrait {
+    flex: none;
+    position: relative;
+}
+
+.portrait > img {
+    border: 1px solid var(--col-red);
+    box-shadow: 0 6px 10px var(--col-gray);
+}
+
+.portrait > h1 {
+    padding: 10px 0;
+    position: absolute;
+    bottom: 20px;
+    left: 1px;
+    width: calc(100% - 2px);
+    font-size: 2.8rem;
+    text-align: center;
+    background-color: #efefef80;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+}
+
+.about-me > div {
+    border: 1px solid var(--col-gray);
+    border-left: 0;
+    padding: 60px;
+    box-shadow: 0 3px 5px var(--col-gray);
+    background-color: var(--col-white);
+}
+
+/* Project grid area */
+.project-grid {
+    display: grid;
 }
