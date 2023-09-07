@@ -24,7 +24,7 @@ body {
 }
 
 /* Header */
-header{
+header {
     border-bottom: 2px solid var(--col-red);
     padding: 20px;
 }
@@ -32,6 +32,7 @@ header{
 .header-flexbox {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .portrait {
@@ -67,6 +68,30 @@ header{
     padding: 60px;
     box-shadow: 0 3px 5px var(--col-gray);
     background-color: var(--col-white);
+}
+
+@media (max-width: 1000px) {
+    .header-flexbox {
+        gap: 20px;
+    }
+
+    .portrait > h1 {
+        font-size: 1.7rem;
+    }
+
+    .portrait > img {
+        box-shadow: 0 3px 5px var(--col-gray);
+    }
+
+    .about-me > div {
+        border-left: 1px solid var(--col-gray);
+    }
+}
+
+@media (max-width: 700px) {
+    .header-flexbox {
+        flex-direction: column;
+    }
 }
 
 /* Project grid area */
