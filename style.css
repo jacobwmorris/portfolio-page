@@ -95,6 +95,65 @@ header {
 }
 
 /* Project grid area */
+main > h1 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 2.8rem;
+}
 .project-grid {
+    margin: 40px;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-items: center;
+    gap: 20px;
+}
+
+.project-card {
+    box-sizing: content-box;
+    max-width: 500px;
+    background-color: var(--col-green);
+    border: 1px solid var(--col-green);
+    box-shadow: 0 3px 5px var(--col-gray);
+    color: #fff;
+}
+
+.card-links {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.project-card h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-right: 50px;
+}
+
+.icon-link {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 5px;
+    flex: none;
+}
+
+.icon-link:hover {
+    background-color: #63994b;
+}
+
+@media (max-width: 700px) {
+    .project-grid {
+        margin: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .project-card {
+        max-width: 300px;
+    }
+
+    .project-card h2 {
+        margin: 0;
+        font-size: 1.3rem;
+    }
 }
