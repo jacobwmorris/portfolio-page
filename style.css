@@ -6,10 +6,10 @@
 
 :root {
     --col-green: #51823c;
+    --col-lightgreen: #e9ffdf;
     --col-red: #d52323;
     --col-tan: #fff0d8;
     --col-white: #efefef;
-    --col-brown: #493800;
     --col-gray: #404040;
     font-size: 18px;
 }
@@ -111,10 +111,14 @@ main > h1 {
 .project-card {
     box-sizing: content-box;
     max-width: 500px;
-    background-color: var(--col-green);
+    background-color: var(--col-lightgreen);
     border: 1px solid var(--col-green);
     box-shadow: 0 3px 5px var(--col-gray);
-    color: #fff;
+    color: #003000;
+}
+
+.pagepic {
+    border-bottom: 1px solid var(--col-green);
 }
 
 .card-links {
@@ -138,8 +142,8 @@ main > h1 {
     flex: none;
 }
 
-.icon-link:hover {
-    background-color: #63994b;
+.icon-link:hover, .icon-link:focus {
+    outline: 2px solid var(--col-green);
 }
 
 @media (max-width: 700px) {
